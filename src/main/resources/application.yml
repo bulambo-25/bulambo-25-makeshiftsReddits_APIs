@@ -1,0 +1,19 @@
+#local connection
+server:
+  error:
+    include-stacktrace: always
+  port: 1212
+spring:
+  main:
+    allow-circular-references: true
+  thymeleaf:
+    cache: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://localhost:8889/Reddit_API_db?createDatabaseIfNotExist=true
+    username: root
+    password: root
